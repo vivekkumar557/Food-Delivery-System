@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                <img src="https://logos-download.com/wp-content/uploads/2017/11/Food_Network_logo_red.png"
+                    alt="">
+            </div>
+            <div class="menu-options">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Your Orders</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Address</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+        <div class="header-items">
+            <div id="total-elements">
+                <div class="address">
+                    <i class="fa-solid fa-location-dot Your-address" id="addAddress"> YOUR ADDRESS</i>
+                </div>
+                <div class="options">
+                    <i class="fa-solid fa-magnifying-glass"> SEARCH</i>
+                    <i class="fa-solid fa-tag"> OFFERS</i>
+                    <i class="fa-solid fa-cart-shopping" id="cart-plus">0 ITEMS</i>
+                </div>
+            </div>
+            <div  id="food-items">
+                <div class="biryani-logo" id="Biryani">
+                    <h1>BIRYANI</h1>
+                    <!-- <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $5</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://www.getarecipes.com/wp-content/uploads/2020/05/Chicken-Biryani-Recipe.png" alt="">
+                        <p class="item-name">Chicken Biryani</p>
+                        <p class="price">Price $35</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $4.6</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20200103150610/Malabar-Biriyani.jpg" alt="">
+                        <p class="item-name">Thalassery Biryani</p>
+                        <p class="price">Price $20</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $5</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20200102173515/Mutton-Biryani-Lucknow.jpg" alt="">
+                        <p class="item-name">Awadhi Biryani</p>
+                        <p class="price">Price $30</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $3.9</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20200103145536/Vegetatian-biryani.jpg" alt="">
+                        <p class="item-name">Tehari Biryani</p>                        </p>
+                        <p class="price">Price $45</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $3.5</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20200103150232/ambur-chicken-biryani-750.jpg" alt="">
+                        <p class="item-name">Ambur Biryani</p>
+                        <p class="price">Price $15</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $3.9</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20190930015726/Kolkata-Biryani.jpg" alt="">
+                        <p class="item-name">Calcutta Biryani</p>
+                        <p class="price">Price $10</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $4</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20200103150829/Sindhi_biryani.jpg" alt="">
+                        <p class="item-name">Sindhi Biryani</p>
+                        <p class="price">Price $15</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $4.3</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20200103152243/chettinad-chicken-biryani.jpg" alt="">
+                        <p class="item-name">Chettinad Biryani</p>
+                        <p class="price">Price $13</p>
+                    </div> -->
+                    
+                </div>
+
+                <div class="South-Indian-logo" id="South Indian">
+                    <h1>SOUTH INDIAN</h1>
+                    <!-- <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $5</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://www.holidify.com/images/cmsuploads/compressed/breakfast-2408818_960_720_20200107183621.jpg" alt="">
+                        <p class="item-name">Idli Sambar</p>
+                        <p class="price">Price $55</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $5</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://www.holidify.com/images/cmsuploads/compressed/Untitled_20200107183407.png" alt="">
+                        <p class="item-name">Dosas</p>
+                        <p class="price">Price $35</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $3.5</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://www.holidify.com/images/cmsuploads/compressed/800px-Medu_Vadas_20200107183712.JPG" alt="">
+                        <p class="item-name">Medu Vada</p>
+                        <p class="price">Price $25</p>
+                    </div>
+                    
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $4.5</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://www.holidify.com/images/cmsuploads/compressed/800px-Food-Uttapam-1_20200107183806.jpg" alt="">
+                        <p class="item-name">Uttapam</p>
+                        <p class="price">Price $15</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $4.1</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://www.holidify.com/images/cmsuploads/compressed/Curd_Rice_20200107184416.jpg" alt="">
+                        <p class="item-name">Curd Rice</p>
+                        <p class="price">Price $19</p>
+                    </div> -->
+                </div>
+
+                <div class="North-Indian-logo" id="North Indian">
+                    <h1>NORTH INDIAN</h1>
+                    <!-- <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $4.6</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://profoodrecipes.com/wp-content/uploads/2024/02/Chole-Bhature.jpg" alt="">
+                        <p class="item-name">​Chole Bhature</p>
+                        <p class="price">Price $20</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $4</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://profoodrecipes.com/wp-content/uploads/2024/02/Tandoori-Chicken.jpg" alt="">
+                        <p class="item-name">Tandoori Chicken</p>
+                        <p class="price">Price $20</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $3.6</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://profoodrecipes.com/wp-content/uploads/2024/02/Rajma-Chawal.jpg" alt="">
+                        <p class="item-name">Rajma Chawal</p>
+                        <p class="price">Price $30</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $5</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://profoodrecipes.com/wp-content/uploads/2024/02/Naan.jpg" alt="">
+                        <p class="item-name">Naan</p>
+                        <p class="price">Price $18</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $4.8</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://profoodrecipes.com/wp-content/uploads/2024/02/Paratha.jpg" alt="">
+                        <p class="item-name">Paratha</p>
+                        <p class="price">Price $10</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $5</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://profoodrecipes.com/wp-content/uploads/2024/02/Dal-Tadka.jpg" alt="">
+                        <p class="item-name">Dal Tadka</p>
+                        <p class="price">Price $20</p>
+                    </div> -->
+                </div>
+                <!-- <div class="Chinese-logo">
+                    <h1>CHINESE FOOD</h1>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $4.5</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://www.getarecipes.com/wp-content/uploads/2020/05/Chicken-Biryani-Recipe.png" alt="">
+                        <p class="item-name">Chiniese Momo</p>
+                        <p class="price">Price $80</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $4.5</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://www.getarecipes.com/wp-content/uploads/2020/05/Chicken-Biryani-Recipe.png" alt="">
+                        <p class="item-name">Chiniese Momo</p>
+                        <p class="price">Price $80</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $4.5</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://www.getarecipes.com/wp-content/uploads/2020/05/Chicken-Biryani-Recipe.png" alt="">
+                        <p class="item-name">Chiniese Momo</p>
+                        <p class="price">Price $80</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $4.5</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://www.getarecipes.com/wp-content/uploads/2020/05/Chicken-Biryani-Recipe.png" alt="">
+                        <p class="item-name">Chiniese Momo</p>
+                        <p class="price">Price $80</p>
+                    </div>
+                    <div class="card-item">
+                        <div class="ratings">
+                            <i class="fa-solid fa-star" id="rate"> $4.5</i>
+                            <i class="fa-regular fa-heart" id="heart"></i>
+                        </div>
+                        <img src="https://www.getarecipes.com/wp-content/uploads/2020/05/Chicken-Biryani-Recipe.png" alt="">
+                        <p class="item-name">Chiniese Momo</p>
+                        <p class="price">Price $80</p>
+                    </div>
+                </div> -->
+            </div>
+            <div id="cart-page" class="cart-toggle">
+                <h1 id="cart-title">Cart Items</h1>
+                <p id="m-total-amount">Total Amount : $100</p>
+                <table>
+                    <thead>
+                        <td>Item</td>
+                        <td>Name</td>
+                        <td>Quantity</td>
+                        <td>Price</td>
+                    </thead>
+                    <tbody id="table-body">
+                       <!-- <tr>
+                        <td>
+                            <img src="https://www.getarecipes.com/wp-content/uploads/2020/05/Chicken-Biryani-Recipe.png" alt="">
+                        </td>
+                        <td>Chicken Biryani</td>
+                        <td>
+                            <button class="decrease-item">-</button>
+                            <span>1</span>
+                            <button class="increase-item">+</button>
+                        </td>
+                        <td>10</td>
+                       </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="cart">
+            <div class="account">
+                <i class="fa-solid fa-user-circle" id="account"> ACCOUNT</i>
+            </div>
+            <div id="category-list">
+                <h1>Go For Hunt</h1>
+                <!-- <div class="card-items">
+                    <img src="https://www.getarecipes.com/wp-content/uploads/2020/05/Chicken-Biryani-Recipe.png" alt="">
+                    <a href="" class="item-name">Biryani</a>
+                </div>
+                <div class="card-items">
+                    <img src="https://www.holidify.com/images/cmsuploads/compressed/breakfast-2408818_960_720_20200107183621.jpg" alt="">
+                    <a href="" class="item-name">South Indian</a>
+                </div>
+                <div class="card-items">
+                    <img src="https://profoodrecipes.com/wp-content/uploads/2024/02/Rajma-Chawal.jpg" alt="">
+                    <a href="" class="item-name">North Indian</a>
+                </div> -->
+                <!-- <div class="card-items">
+                    <img src="https://www.getarecipes.com/wp-content/uploads/2020/05/Chicken-Biryani-Recipe.png" alt="">
+                    <a href="" class="item-name">Chinese</a>
+                </div> -->
+            </div>
+            <div id="checkout" class="cart-toggle">
+                <p id="total-item">Total item : 5</p>
+                <p id="total-price">Total Price : $50</p>
+                <p class="Free-delivery">Free delivery on above $40</p>
+                <button class="checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <!-- responsive view -->
+     <div id="mobile-view" class="mobile-view">
+        <div class="mobile-top">
+            <div class="logo-box">
+                <img src="food-delivery-logo (2).png"
+                    alt="">
+                <i class="fa-solid fa-location-dot Your-address" id="m-addAddress"> YOUR ADDRESS</i>
+                <!-- <h3>Food Point</h3> -->
+            </div>
+            <div class="top-menu">
+                <i class="fa-solid fa-magnifying-glass"> SEARCH</i>
+                <i class="fa-solid fa-tag"> OFFERS</i>
+                <i class="fa-regular fa-heart" id="heart"></i>
+                <i class="fa-solid fa-cart-shopping" id="m-cart-plus">0</i>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="category-header" id="category-header">
+
+            </div>
+        </div>
+        <div class="mobile-footer">
+            <a href="#">Home</a>
+            <a href="#">cart</a>
+            <a href="#">Offers</a>
+            <a href="#">Orders</a>
+        </div>
+     </div>
+    <script src="logic.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 230px 1fr 300px;
+    /* column-gap: 10px; */
+    height: 100%;
+    overflow: hidden;
+}
+.menu{
+    background-color: rgb(255, 249, 243);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.logo{
+    padding: 0 30px;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 0.5em;
+}
+.menu-options a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 25px;
+    margin: 12px 0;
+    color: rgb(52, 51, 51);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.menu-options a:hover{
+    background-color: rgb(245, 69, 69);
+    color: white;
+}
+.header-items{
+    background-color:whitesmoke;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-sizing:content-box;
+}
+#total-elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: whitesmoke;
+    z-index: 1;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.Your-address{
+    border: 2px solid red;
+    padding:8px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    width: 180px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+
+.options i , #account{
+    border: 2px solid red;
+    padding:8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 16px;
+    /* width: 250px; */
+}
+#cart-plus p{
+    display: inline;
+    font-size: 20px;
+    font-weight: 600;
+}
+.Your-address:hover{
+    background-color: rgb(248, 52, 52);
+    color: white;
+}
+.South-Indian-logo .card-item , .Chinese-logo .card-item{
+    background-color: rgb(168, 248, 248);
+}
+.biryani-logo .card-item , .North-Indian-logo .card-item{
+    background-color: rgb(249, 232, 201);
+}
+.options i:hover{
+    background-color: rgb(248, 52, 52);
+    color: white;
+}
+.account i:hover{
+    background-color: rgb(248, 52, 52);
+    color: white;
+}
+.biryani-logo , .South-Indian-logo , .North-Indian-logo , .Chinese-logo{
+      margin-top: 40px;
+}
+.ratings{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+#rate{
+    background-color: red;
+    border-radius: 5px;
+    color: aliceblue;
+    padding: 5px;
+}
+.heart{
+    background-color: white;
+    border-radius: 50%;
+    padding: 6px;
+    cursor: pointer;
+}
+.toggle-heart{
+    background: black;
+    color: gold;
+}
+
+.card-item{
+    width: 180px;
+    height: 220px;
+    margin: 10px;
+    padding: 13px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: lightpink;
+    transition: 0.5s all ease-in-out;
+}
+.card-item:hover{
+    transform: scale(1.05);
+}
+.card-item img{
+    width: 75%;
+    height: 60%;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+    display: block;
+}
+h1{
+    color: rgb(255, 0, 0);
+    padding-left: 10px;
+}
+.item-name , .price{
+    margin: 5px 0;
+    font-weight: 600;
+
+}
+#cart{
+    background-color:whitesmoke;
+    padding-right: 30px;
+    overflow-y: scroll;
+}
+.account{
+    padding-top: 42px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: whitesmoke;
+}
+.category-list{
+    /* display: none; */
+}
+.cart-toggle{
+    display: none;
+}
+#category-list h1{
+      margin-top: 40px;
+}
+.card-items{
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    margin-top:15px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    background-color: red;
+}
+.card-items:hover{
+    background-color: black;
+}
+.card-items img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.card-items .item-name{
+    text-decoration: none;
+    padding-left: 10px;
+    color: white;
+}
+.food-items{
+    display: none;
+}
+#cart-page{
+    /* display: none; */
+    background-color: white;
+    margin: 40px 10px;
+    margin-right: 50px;
+    padding: 20px 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+#cart-page table{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+#cart-page table thead td{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+#m-total-amount{
+    display: none;
+}
+#cart-page table tbody td{
+    padding: 10px 0;
+    font-size: 20px;
+}
+#cart-page table tbody button{
+    outline: none;
+    border: none;
+    background: red;
+    font-size: 16px;
+    color: white;
+    border: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    padding:1px 8px;
+    border-radius: 5px;
+}
+#cart-page table tbody img{
+    width: 50px;
+    height: 50px;
+    border-radius:50px;
+}
+#checkout{
+    /* display: none; */
+    text-align: center;
+    margin: 43px auto;
+    border-radius: 5px;
+    background: white;
+    padding: 10px 20px;
+}
+#checkout p{
+    margin: 15px 0;
+    float: left;
+}
+#total-item , #total-price{
+    font-size: 25px;
+    color: red;   
+}
+.checkout{
+    outline: none;
+    border: none;
+    background: red;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    bottom: 30px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+.checkout:hover{
+    background: black;
+}
+.Free-delivery{
+    font-size: 17px;
+    font-weight: 600;
+    color: yellowgreen;
+}
+
+/* mobile-view */
+@media screen and (max-width:800px){
+    .container{
+        display: none;
+    }
+    #mobile-view{
+        display: grid;
+        grid-template-rows:120px 1fr 50px;
+        height: 100%;
+        overflow: hidden;
+        width: 100%;
+    }
+    .logo-box img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    .mobile-top{
+        padding: 5px 15px;
+        z-index: 1;
+        background-color: antiquewhite;
+    }
+    .item-container{
+        overflow-y: scroll;
+    }
+    .logo-box,.top-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top-menu{
+        color: red;
+    }
+    .top-menu i{
+        size: 20px;
+        cursor: pointer;
+        padding: 12px 5px;
+        border-radius: 50%;
+    }
+    .m-cart-toggle{
+        color: white;
+        background: lightcoral;
+    }
+    .category-header{
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        position: sticky;
+        top: 0;
+        background: antiquewhite;
+        z-index: 1;
+        border-bottom: 1px solid rgb(219,219,219);
+        margin: 0;
+    }
+    .toggle-category{
+        display: none;
+        position: relative;
+    }
+    .card-items{
+        margin: 0 10px;
+        text-align: center;
+    }
+    .card-items img{
+        width:60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-left: 15px;
+    }
+    .card-items:hover{
+        background: none;
+        transform: none;
+    }
+    .card-items:hover img{
+        transform: none;
+        transition: none;
+    }
+    .list-name{
+        margin: 5px 0;
+        color: cornflowerblue;
+        width: max-content;
+        font-size: 16px;
+    }
+    #food-items{
+        padding: 5px 10px;
+    }
+    .mobile-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 15px;
+        border-top: 2px solid rgb(202, 198, 198);
+        background-color: antiquewhite;
+    }
+    .mobile-footer a{
+        color: red;
+        text-decoration: none;
+        bottom: 0;
+        font-size: 20px;
+    }
+    #category-name{
+        font-size: 20px;
+    }
+    .card-item{
+        width: 165px;
+        height: 200px;
+    }
+    .card-item:hover{
+        transform: none;
+    }
+    .card-item img{
+        width: 70px;
+        height: 70px;
+    }
+    .item-name , .price{
+          font-size: 15px;
+    }
+    .card-items{
+        flex-direction: column;
+    }
+    #cart-page{
+        margin: 3px 0;
+        padding: 10px 5px;
+        padding-bottom: 30px;
+        border-top: 1px solid rgb(219, 219, 219);
+    }
+    #cart-page table thead td{
+        font-size: 20px;
+    }
+    #cart-page table tbody td{
+        font-size: 18px;
+    }
+    #cart-page table tbody td img{
+        width: 60px;
+        height: 60px;
+    }
+    #cart-title{
+        font-size: 25px;
+        display: inline-block;
+    }
+    #m-total-amount{
+        display: inline-block;
+        color: lightcoral;
+        padding: 5px 10px;
+        margin: 0;
+        border: 1px solid lightcoral;
+        float: right;
+    }
+    .checkout{
+        font-size: 14px;
+        background: lightcoral;
+        padding: 8px 15px;
+        margin: auto;
+    }
+    .btn-box{
+        text-align: center;
+    }
+    #biryani{
+        margin-top: 10px;
+    }
+    .card-items{
+        display: flex;
+        align-items: center;
+        border-radius: 25px;
+        margin-top:15px;
+        cursor: pointer;
+        transition: 0.3s all ease-in-out;
+        color: black;
+        background: none;
+    }
+    .card-items .item-name{
+        text-decoration: none;
+        color: black;
+    }
+}
+@media screen and (max-width:380px) and (-webkit-min-device-pixel-ratio: 2){
+    #mobile-view{
+        min-height: -webkit-fill-available;
+    }
+    .card-item{
+        height: 200px;
+        width: 160px;
+    }
+    #food-items{
+         padding: 0;
+    }
+}
+@media screen and (min-width:801px) {
+    #mobile-view{
+        display: none;
+    }
+    
+}
